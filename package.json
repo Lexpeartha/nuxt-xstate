@@ -1,10 +1,11 @@
 {
   "name": "nuxt-xstate",
-  "version": "0.0.1",
+  "version": "0.1.0",
   "license": "MIT",
   "type": "module",
   "repository": "Lexpeartha/nuxt-xstate",
   "description": "XState integration for Nuxt",
+  "author": "Lexpeartha",
   "keywords": [
     "nuxt",
     "module",
