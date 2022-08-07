@@ -1,9 +1,9 @@
 import { defineNuxtConfig } from 'nuxt'
-import XStatemodule from '..'
+import XStateModule from '..'
 
 export default defineNuxtConfig({
   modules: [
-    XStatemodule
+    XStateModule
   ],
   xState: {
     minimal: true
