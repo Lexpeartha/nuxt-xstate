@@ -1,6 +1,6 @@
 # Nuxt XState
 
-Nuxt XState module allows for easy integration of [XState](https://xstate.js.org/) with Nuxt.js.
+Nuxt XState module allows for easy integration of [XState](https://xstate.js.org/) with Nuxt.js. This module is  🚧 WIP 🚧 so stay alert!
 
 - Read documentation :book: (*soon*)
 - Online playground :video_game: (*soon*)
@@ -47,7 +47,7 @@ export default defineNuxtConfig({
 })
 ```
 
-- `minimal`: set to `true` to use minified implementations of certain features XState ([see here](https://xstate.js.org/docs/packages/xstate-fsm/#features))
+- `minimal`: set to `true` to use minified implementations of certain XState features ([see here](https://xstate.js.org/docs/packages/xstate-fsm/#features))
 
 :warning: **There's known issue where enabling `minimal` doesn't work with server-side rendering**
 
