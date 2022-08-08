@@ -5,6 +5,7 @@ export default defineNuxtConfig({
   modules: [
     XStateModule
   ],
+  builder: 'webpack',
   xState: {
     minimal: true
     // minimal: false
