@@ -18,8 +18,15 @@ export default defineNuxtModule<ModuleOptions>({
   },
   // eslint-disable-next-line require-await
   async setup (options, nuxt) {
-    // Transpile packages that include xstate in their name
-    nuxt.options.build.transpile.push(/xstate/)
+    const builder: any = nuxt.options.builder
+
+    if (builder === '@nuxt/webpack-builder') {
+      nuxt.options.build.transpile.push('xstate')
+      nuxt.options.build.transpile.push('@xstate/vue')
+      nuxt.options.build.transpile.push('@xstate/fsm')
+    } else {
+      nuxt.options.build.transpile.push('@xstate/fsm')
+    }
 
     // Setup auto-importing
     setupAutoImports(options.minimal)

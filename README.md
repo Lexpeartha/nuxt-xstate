@@ -49,9 +49,6 @@ export default defineNuxtConfig({
 
 - `minimal`: set to `true` to use minified implementations of certain XState features ([see here](https://xstate.js.org/docs/packages/xstate-fsm/#features))
 
-:warning: **There's known issue where enabling `minimal` doesn't work with server-side rendering**
-
-
 ### In your project
 
 Module auto-imports all `@xstate/vue` composables and `createMachine` function from `xstate`. You should be able to use them in your project without any issues.

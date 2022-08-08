@@ -5,6 +5,7 @@ export default defineNuxtConfig({
   modules: [
     XStateModule
   ],
+  builder: 'vite',
   xState: {
     minimal: true
     // minimal: false
