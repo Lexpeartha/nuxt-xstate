@@ -1,0 +1,25 @@
+name: "📚 Documentation change"
+description: Open a bug report to help improve Nuxt/XState's documentation
+labels: ["bug"]
+body:
+  - type: textarea
+    id: location
+    attributes:
+      label: Documentation Location
+      description: What's the exact location for the part of the docs you think needs to be changed/improved
+      placeholder: https://www.example.com/getting-started
+    validations:
+      required: true
+  - type: textarea
+    id: problem-description
+    attributes:
+      label: Describe the proposed change
+      description: Description of what needs to improved on/changed in the docs
+      placeholder: Description
+    validations:
+      required: true
+  - type: textarea
+    id: additional
+    attributes:
+      label: Additional context
+      description: If applicable, add any other context about your issue here

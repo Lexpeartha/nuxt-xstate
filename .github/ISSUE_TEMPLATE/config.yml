@@ -1,0 +1,7 @@
+contact_links:
+  # - name: 📚 Documentation
+    # url: 
+    # about: Check documentation for exact usage
+  - name: 💬 Discussions
+    url: https://github.com/Lexpeartha/nuxt-xstate/discussions
+    about: Use discussions for ideas and feature requests, or asking How-to and general questions

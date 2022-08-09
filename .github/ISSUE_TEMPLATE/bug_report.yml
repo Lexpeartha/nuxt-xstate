@@ -1,0 +1,33 @@
+name: "🐛 Bug report"
+description: Open a bug report to help improve Nuxt/XState
+labels: ["bug"]
+body:
+  - type: textarea
+    id: bug-env
+    attributes:
+      label: Your Environment
+      description: Use `npx nuxi info` and paste it's contents here
+      placeholder: Environment data
+    validations:
+      required: true
+  - type: textarea
+    id: reproduction
+    attributes:
+      label: Reproduction
+      description: Minimal reproduction is not required, but it would really help. Create your own repo, or use StackBlitz for quick scaffolding
+      placeholder: Reproduction
+    validations:
+      required: false
+  - type: textarea
+    id: bug-description
+    attributes:
+      label: Describe the bug
+      description: Clear description of what the bug is, and what happens
+      placeholder: Bug description
+    validations:
+      required: true
+  - type: textarea
+    id: additional
+    attributes:
+      label: Additional context
+      description: If applicable, add any other context about the problem here
