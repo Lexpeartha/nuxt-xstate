@@ -5,6 +5,8 @@ Nuxt XState module allows for easy integration of [XState](https://xstate.js.org
 - Read documentation :book: (*soon*)
 - Online playground :video_game: (*soon*)
 
+Basic documentation has been set up, but [this VitePress issue](https://github.com/vuejs/vitepress/issues/917) is blocking it from being deployed by CI/CD workflow. Temporarily hosted docs can be found [here](https://nuxt-xstate.netlify.app/) - it's location will most certainly change in the future!
+
 ## Features :sparkles:
 
 - Nuxt 3 support

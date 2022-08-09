@@ -33,7 +33,10 @@
     "dev:build": "nuxi build playground",
     "dev:generate": "nuxi generate playground",
     "dev:preview": "nuxi preview playground",
-    "dev:prepare": "nuxt-module-build --stub && nuxi prepare playground"
+    "dev:prepare": "nuxt-module-build --stub && nuxi prepare playground",
+    "docs:dev": "vitepress dev docs --port 4000",
+    "docs:build": "vitepress build docs",
+    "docs:serve": "vitepress serve docs"
   },
   "dependencies": {
     "@nuxt/kit": "^3.0.0-rc.6",
@@ -48,6 +51,8 @@
     "@nuxtjs/eslint-config-typescript": "latest",
     "eslint": "latest",
     "nuxt": "^3.0.0-rc.6",
+    "vitepress": "^1.0.0-alpha.4",
+    "vue": "^3.2.37",
     "vue-demi": "^0.13.6"
   }
 }
