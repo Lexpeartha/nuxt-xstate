@@ -8,6 +8,10 @@ export default defineNuxtConfig({
   builder: 'vite',
   xState: {
     minimal: true
-    // minimal: false
+    // minimal: false,
+    // customMachines: {
+    //   dir: 'machines',
+    //   importSuffix: 'Machine'
+    // }
   }
 })

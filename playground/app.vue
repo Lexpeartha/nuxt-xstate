@@ -8,7 +8,5 @@
 </template>
 
 <script setup lang="ts">
-import { loadingMachine } from '~/machines/loading'
-
 const { state, send } = useMachine(loadingMachine)
 </script>

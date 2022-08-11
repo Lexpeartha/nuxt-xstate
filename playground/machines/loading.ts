@@ -1,4 +1,4 @@
-export const loadingMachine = createMachine({
+export default createMachine({
   id: 'loading',
   initial: 'idle',
   states: {

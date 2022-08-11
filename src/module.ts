@@ -2,9 +2,16 @@ import { defineNuxtModule } from '@nuxt/kit'
 
 import { setupTranspilation } from './parts/transpile'
 import { setupAutoImports } from './parts/autoImports'
+import { setupCustomMachines } from './parts/customMachine'
+
+export interface CustomMachinesOptions {
+  dir?: string,
+  importSuffix?: string,
+}
 
 export interface ModuleOptions {
   minimal: boolean;
+  customMachines: CustomMachinesOptions | false;
 }
 
 export default defineNuxtModule<ModuleOptions>({
@@ -16,7 +23,11 @@ export default defineNuxtModule<ModuleOptions>({
     }
   },
   defaults: {
-    minimal: false
+    minimal: false,
+    customMachines: {
+      dir: 'machines',
+      importSuffix: 'Machine'
+    }
   },
   // eslint-disable-next-line require-await
   async setup (options, nuxt) {
@@ -25,5 +36,7 @@ export default defineNuxtModule<ModuleOptions>({
 
     // Setup auto-importing
     setupAutoImports(options.minimal)
+
+    if (options.customMachines) { await setupCustomMachines(options.customMachines) }
   }
 })
