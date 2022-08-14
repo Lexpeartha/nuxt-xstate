@@ -39,22 +39,22 @@
     "docs:serve": "vitepress serve docs"
   },
   "dependencies": {
-    "@nuxt/kit": "^3.0.0-rc.6",
+    "@nuxt/kit": "^3.0.0-rc.8",
     "@xstate/fsm": "^2.0.0",
     "@xstate/vue": "^2.0.0",
     "globby": "^13.1.2",
-    "pathe": "^0.3.3",
-    "unimport": "^0.6.5",
-    "xstate": "^4.33.0"
+    "pathe": "^0.3.4",
+    "unimport": "^0.6.7",
+    "xstate": "^4.33.1"
   },
   "devDependencies": {
     "@nuxt/module-builder": "latest",
-    "@nuxt/webpack-builder": "^3.0.0-rc.6",
-    "@nuxtjs/eslint-config-typescript": "latest",
+    "@nuxt/webpack-builder": "^3.0.0-rc.8",
+    "@nuxtjs/eslint-config-typescript": "10.0.0",
     "eslint": "latest",
-    "nuxt": "^3.0.0-rc.6",
+    "nuxt": "^3.0.0-rc.8",
     "vitepress": "^1.0.0-alpha.4",
     "vue": "^3.2.37",
-    "vue-demi": "^0.13.6"
+    "vue-demi": "^0.13.7"
   }
 }

@@ -20,7 +20,7 @@ export const setupAutoImports = (isMinimal: boolean) => {
           imports: xStateComposables.filter(composable => composable !== 'useMachine')
         }),
         defineUnimportPreset({
-          from: isDev ? '@xstate/vue/lib/fsm' : '@xstate/vue/lib/fsm.js',
+          from: '@xstate/vue/lib/fsm.js',
           imports: ['useMachine']
         })
       )
