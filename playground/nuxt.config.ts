@@ -5,9 +5,8 @@ export default defineNuxtConfig({
   modules: [
     XStateModule
   ],
-  builder: 'vite',
+  builder: 'webpack',
   xState: {
-    minimal: true
     // minimal: false,
     // customMachines: {
     //   dir: 'machines',
