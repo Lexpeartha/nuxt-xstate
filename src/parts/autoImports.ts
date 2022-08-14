@@ -7,41 +7,38 @@ export const setupAutoImports = (isMinimal: boolean) => {
   const isDev = nuxt.options.dev
 
   nuxt.hook('autoImports:sources', (presets) => {
-    // If the minimal option is disabled, import everything regularly
-    if (!isMinimal) {
+    // If minimal options is enabled import required
+    // things from @xstate/vue/lib/fsm or @xstate/fsm
+    if (isMinimal) {
       presets.push(
         defineUnimportPreset({
-          from: '@xstate/vue',
-          imports: [...xStateComposables]
-        })
-      )
-      presets.push(
-        defineUnimportPreset({
-          from: 'xstate',
+          from: '@xstate/fsm',
           imports: [...xStateImports]
-        })
-      )
-    } else {
-      // Otherwise, import required thing from @xstate/vue/lib/fsm or @xstate/fsm
-      presets.push(
+        }),
         defineUnimportPreset({
           from: '@xstate/vue',
           imports: xStateComposables.filter(composable => composable !== 'useMachine')
-        })
-      )
-      presets.push(
+        }),
         defineUnimportPreset({
           from: isDev ? '@xstate/vue/lib/fsm' : '@xstate/vue/lib/fsm.js',
           imports: ['useMachine']
         })
       )
-      presets.push(
-        defineUnimportPreset({
-          from: '@xstate/fsm',
-          imports: [...xStateImports]
-        })
-      )
+
+      return
     }
+
+    // Otherwise import everything regularly
+    presets.push(
+      defineUnimportPreset({
+        from: 'xstate',
+        imports: [...xStateImports]
+      }),
+      defineUnimportPreset({
+        from: '@xstate/vue',
+        imports: [...xStateComposables]
+      })
+    )
   })
 }
 
