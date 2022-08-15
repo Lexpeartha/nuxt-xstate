@@ -1,8 +1,17 @@
 import { defineNuxtModule } from '@nuxt/kit'
+
+import { setupTranspilation } from './parts/transpile'
 import { setupAutoImports } from './parts/autoImports'
+import { setupCustomMachines } from './parts/customMachine'
+
+export interface CustomMachinesOptions {
+  dir?: string,
+  importSuffix?: string,
+}
 
 export interface ModuleOptions {
   minimal: boolean;
+  customMachines: CustomMachinesOptions | false;
 }
 
 export default defineNuxtModule<ModuleOptions>({
@@ -14,21 +23,20 @@ export default defineNuxtModule<ModuleOptions>({
     }
   },
   defaults: {
-    minimal: false
+    minimal: false,
+    customMachines: {
+      dir: 'machines',
+      importSuffix: 'Machine'
+    }
   },
   // eslint-disable-next-line require-await
   async setup (options, nuxt) {
-    const builder: any = nuxt.options.builder
-
-    if (builder === '@nuxt/webpack-builder') {
-      nuxt.options.build.transpile.push('xstate')
-      nuxt.options.build.transpile.push('@xstate/vue')
-      nuxt.options.build.transpile.push('@xstate/fsm')
-    } else {
-      nuxt.options.build.transpile.push('@xstate/fsm')
-    }
+    // Setup dependencies to be transpiled
+    setupTranspilation()
 
     // Setup auto-importing
     setupAutoImports(options.minimal)
+
+    if (options.customMachines) { await setupCustomMachines(options.customMachines) }
   }
 })
