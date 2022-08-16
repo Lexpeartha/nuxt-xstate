@@ -55,7 +55,7 @@ export default defineNuxtConfig({
   modules: ['nuxt-xstate'],
   // Shown below are the default module options
   xState: {
-    minimal: false // boolean
+    minimal: false, // boolean
     customMachines: {
       dir: 'machines', // string
       importSuffix: 'Machine', // string
