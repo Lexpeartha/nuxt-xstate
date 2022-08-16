@@ -1,5 +1,7 @@
 # Nuxt XState
 
+![GitHub package.json version](https://img.shields.io/github/package-json/v/Lexpeartha/nuxt-xstate?style=flat-square) ![npm (prod) dependency version](https://img.shields.io/npm/dependency-version/nuxt-xstate/@nuxt/kit?style=flat-square) ![npm (prod) dependency version](https://img.shields.io/npm/dependency-version/nuxt-xstate/xstate?style=flat-square) ![npm](https://img.shields.io/npm/dm/nuxt-xstate?label=npm%20downloads&style=flat-square) ![Snyk Vulnerabilities for npm package](https://img.shields.io/snyk/vulnerabilities/npm/nuxt-xstate?style=flat-square)
+
 Nuxt XState module allows for easy integration of [XState](https://xstate.js.org/) with Nuxt.js. This module is  🚧 WIP 🚧 so stay alert!
 
 - Read documentation :book: (*soon*)
