@@ -4,10 +4,8 @@
 
 Nuxt XState module allows for easy integration of [XState](https://xstate.js.org/) with Nuxt.js. This module is  🚧 WIP 🚧 so stay alert!
 
-- Read documentation :book: (*soon*)
+- [Read documentation](https://nuxt-xstate.lexpeartha.com/) :book:
 - [Online playground](https://stackblitz.com/edit/nuxt-xstate-playground?file=app.vue) :video_game:
-
-Basic documentation has been set up, but [this VitePress issue](https://github.com/vuejs/vitepress/issues/917) is blocking it from being deployed by CI/CD workflow. Temporary and manually deployed docs can be found [here](https://nuxt-xstate.netlify.app/) - it's location will most certainly change in the future!
 
 ## Features :sparkles:
 
@@ -64,11 +62,7 @@ export default defineNuxtConfig({
 
 ### In your project
 
-Module auto-imports all `@xstate/vue` composables and `createMachine` function from `xstate`. You should be able to use them in your project right away!
-
-To import your own state-machines, go create directory with the name of `machines` (or other name you specified in module options) and create a file that has the name of your state-machine. Module will look for default exports from that file, and append it with the suffix from the options, so you can use it in your project. To make this auto-imports fully type-safe, follow the [official guide](https://xstate.js.org/docs/guides/typescript.html#using-typescript).
-
-Check out [temporary docs](https://nuxt-xstate.netlify.app/) for code example and more details
+Check out [documentation](https://nuxt-xstate.lexpeartha.com/getting-started.html#usage) for code example and exact details of usage
 
 ## Work in progress :construction:
 

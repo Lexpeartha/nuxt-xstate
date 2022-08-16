@@ -14,8 +14,6 @@ Nuxt XState module allows for easy integration of [XState](https://xstate.js.org
 :warning: This module is still WIP so stay alert!
 :::
 
-[[toc]]
-
 ## Features
 
 - Nuxt 3 support :sparkles:
@@ -98,5 +96,4 @@ Currently module only scans for your state-machines when launching dev server. I
 
 ## Work in progress features
 
-- Nuxt 2/Bridge support
 - [XState visualizer](https://xstate.js.org/viz/) support
