@@ -1,5 +1,6 @@
 import { defineNuxtModule } from '@nuxt/kit'
 
+import { name, version } from '../package.json'
 import { setupTranspilation } from './parts/transpile'
 import { setupAutoImports } from './parts/autoImports'
 import { setupCustomMachines } from './parts/customMachine'
@@ -16,7 +17,8 @@ export interface ModuleOptions {
 
 export default defineNuxtModule<ModuleOptions>({
   meta: {
-    name: 'nuxt-xstate',
+    name,
+    version,
     configKey: 'xState',
     compatibility: {
       nuxt: '^3.0.0'
