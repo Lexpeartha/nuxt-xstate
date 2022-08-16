@@ -8,7 +8,7 @@ aside: true
 
 Nuxt XState module allows for easy integration of [XState](https://xstate.js.org/) with Nuxt.js.
 
-- Online playground :video_game: (*soon*)
+- [Online playground](https://stackblitz.com/edit/nuxt-xstate-playground?file=app.vue) :video_game:
 
 ::: warning
 :warning: This module is still WIP so stay alert!
