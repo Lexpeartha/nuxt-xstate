@@ -99,5 +99,4 @@ Currently module only scans for your state-machines when launching dev server. I
 ## Work in progress features
 
 - Nuxt 2/Bridge support
-- Auto-import your own state machines
 - [XState visualizer](https://xstate.js.org/viz/) support
