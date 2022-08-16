@@ -1,7 +1,7 @@
 ---
 title: Introduction
 lang: en-US
-description: 'Hello there'
+description: 'First-class XState integration for Nuxt'
 lastUpdated: false
 layout: home
 hero:
