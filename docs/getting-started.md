@@ -92,6 +92,10 @@ Then in your components/pages it would be auto-imported and ready for usage:
 ```
 :::
 
+::: warning Known issue
+Currently module only scans for your state-machines when launching dev server. If you want your new state-machines to be auto-imported, you need to restart the dev server. See [this issue](https://github.com/Lexpeartha/nuxt-xstate/issues/9) for more details and to track the progress of fixing the issue.
+:::
+
 ## Work in progress features
 
 - Nuxt 2/Bridge support
