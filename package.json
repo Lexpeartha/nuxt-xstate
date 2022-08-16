@@ -45,7 +45,7 @@
     "globby": "^13.1.2",
     "pathe": "^0.3.4",
     "unimport": "^0.6.7",
-    "xstate": "^4.33.1"
+    "xstate": "^4.33.2"
   },
   "devDependencies": {
     "@nuxt/module-builder": "latest",
@@ -53,7 +53,7 @@
     "@nuxtjs/eslint-config-typescript": "10.0.0",
     "eslint": "latest",
     "nuxt": "^3.0.0-rc.8",
-    "vitepress": "^1.0.0-alpha.4",
+    "vitepress": "^1.0.0-alpha.5",
     "vue": "^3.2.37",
     "vue-demi": "^0.13.7"
   }
