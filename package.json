@@ -53,7 +53,7 @@
     "@nuxtjs/eslint-config-typescript": "10.0.0",
     "eslint": "latest",
     "nuxt": "^3.0.0-rc.8",
-    "vitepress": "npm:@brc-dd/vitepress@next",
+    "vitepress": "v1.0.0-alpha.6",
     "vue": "^3.2.37",
     "vue-demi": "^0.13.8"
   }

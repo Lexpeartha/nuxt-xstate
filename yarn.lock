@@ -404,12 +404,12 @@
   dependencies:
     mime "^3.0.0"
 
-"@docsearch/css@3.2.1", "@docsearch/css@^3.2.0":
+"@docsearch/css@3.2.1", "@docsearch/css@^3.2.1":
   version "3.2.1"
   resolved "https://registry.yarnpkg.com/@docsearch/css/-/css-3.2.1.tgz#c05d7818b0e43b42f9efa2d82a11c36606b37b27"
   integrity sha512-gaP6TxxwQC+K8D6TRx5WULUWKrcbzECOPA2KCVMuI+6C7dNiGUk5yXXzVhc5sld79XKYLnO9DRTI4mjXDYkh+g==
 
-"@docsearch/js@^3.2.0":
+"@docsearch/js@^3.2.1":
   version "3.2.1"
   resolved "https://registry.yarnpkg.com/@docsearch/js/-/js-3.2.1.tgz#d6856fb6223c7a47091640264d5144d59806bc30"
   integrity sha512-H1PekEtSeS0msetR2YGGey2w7jQ2wAKfGODJvQTygSwMgUZ+2DHpzUgeDyEBIXRIfaBcoQneqrzsljM62pm6Xg==
@@ -6526,7 +6526,7 @@ vite-plugin-checker@^0.4.9:
   optionalDependencies:
     fsevents "~2.3.2"
 
-vite@^3.0.7:
+vite@^3.0.8:
   version "3.0.8"
   resolved "https://registry.yarnpkg.com/vite/-/vite-3.0.8.tgz#aa095ad8e3e5da46d9ec7e878f262678965d6531"
   integrity sha512-AOZ4eN7mrkJiOLuw8IA7piS4IdOQyQCA81GxGsAQvAZzMRi9ZwGB3TOaYsj4uLAWK46T5L4AfQ6InNGlxX30IQ==
@@ -6550,19 +6550,19 @@ vite@~3.0.6:
   optionalDependencies:
     fsevents "~2.3.2"
 
-"vitepress@npm:@brc-dd/vitepress@next":
-  version "1.0.0-dev.1bd1894"
-  resolved "https://registry.yarnpkg.com/@brc-dd/vitepress/-/vitepress-1.0.0-dev.1bd1894.tgz#a47c8d709ca3a37dbf85cd81151f8ef3dc518c04"
-  integrity sha512-Ui439+feXMecP5Qx2nrg1DM2TvaePM2j0WJ/VcnPtPGQB9hjeMxOxKMM9AbfANkunF1kZ5k2mti5Dc3q3qwvqQ==
+vitepress@v1.0.0-alpha.6:
+  version "1.0.0-alpha.6"
+  resolved "https://registry.yarnpkg.com/vitepress/-/vitepress-1.0.0-alpha.6.tgz#27fb7dfe3f6f8d83135c1382a60688ee90628c8e"
+  integrity sha512-VS6BPG9nweyVqBhb2iqhXT8Qrq0Lg7/FHdzxtNeVs+dhUR8mHKmjBTPKKqEqgod/srZfl7ynXOtckTEfJynaKg==
   dependencies:
-    "@docsearch/css" "^3.2.0"
-    "@docsearch/js" "^3.2.0"
+    "@docsearch/css" "^3.2.1"
+    "@docsearch/js" "^3.2.1"
     "@vitejs/plugin-vue" "^3.0.3"
     "@vue/devtools-api" "^6.2.1"
     "@vueuse/core" "^9.1.0"
     body-scroll-lock "^4.0.0-beta.0"
     shiki "^0.11.1"
-    vite "^3.0.7"
+    vite "^3.0.8"
     vue "^3.2.37"
 
 vscode-jsonrpc@6.0.0:
