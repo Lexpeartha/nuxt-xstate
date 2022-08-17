@@ -43,7 +43,8 @@ export const setupAutoImports = (isMinimal: boolean) => {
 }
 
 const xStateImports = [
-  'createMachine'
+  'createMachine',
+  'assign'
 ]
 
 const xStateComposables = [
