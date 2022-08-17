@@ -42,5 +42,8 @@ jobs:
       - name: Install dependencies 👨🏻‍💻
         run: yarn
 
+      - name: Prepare environment 🌳
+        run: yarn dev:prepare
+
       - name: Run tests 🧪
         run: yarn test:types && yarn test
