@@ -5,6 +5,7 @@ export default defineConfig({
   test: {
     deps: {
       inline: [/@nuxt\/test-utils-edge/]
-    }
+    },
+    testTimeout: 10000
   }
 })
