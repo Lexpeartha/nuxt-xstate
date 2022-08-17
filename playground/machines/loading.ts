@@ -1,6 +1,7 @@
 export default createMachine({
   id: 'loading',
   initial: 'idle',
+  predictableActionArguments: true,
   states: {
     idle: {
       on: {
