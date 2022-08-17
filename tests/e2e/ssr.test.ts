@@ -24,7 +24,7 @@ describe('ssr', async () => {
 
     await page.click('[data-test-id="click-btn"]')
 
-    const stateText = await page.innerText('[data-test-id="state"]')
+    const stateText = await page.innerText('[data-test-id="state-txt"]')
     expect(stateText).toBe('loading')
   })
 
