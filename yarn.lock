@@ -133,11 +133,6 @@
     "@jridgewell/gen-mapping" "^0.1.0"
     "@jridgewell/trace-mapping" "^0.3.9"
 
-"@antfu/utils@^0.5.2":
-  version "0.5.2"
-  resolved "https://registry.yarnpkg.com/@antfu/utils/-/utils-0.5.2.tgz#8c2d931ff927be0ebe740169874a3d4004ab414b"
-  integrity sha512-CQkeV+oJxUazwjlHD0/3ZD08QWKuGQkhnrKo3e6ly5pd48VUpXbb77q0xMU4+vc2CkJnDS02Eq/M9ugyX20XZA==
-
 "@babel/code-frame@^7.0.0", "@babel/code-frame@^7.10.4", "@babel/code-frame@^7.12.13", "@babel/code-frame@^7.16.7", "@babel/code-frame@^7.18.6":
   version "7.18.6"
   resolved "https://registry.yarnpkg.com/@babel/code-frame/-/code-frame-7.18.6.tgz#3b25d38c89600baa2dcc219edfa88a74eb2c427a"
@@ -1845,7 +1840,7 @@ builtins@^5.0.1:
   dependencies:
     semver "^7.0.0"
 
-c12@^0.2.7, c12@^0.2.8, c12@^0.2.9:
+c12@^0.2.8, c12@^0.2.9:
   version "0.2.9"
   resolved "https://registry.yarnpkg.com/c12/-/c12-0.2.9.tgz#697328714b04e0b54cec299b48c55eb5a69bf9ef"
   integrity sha512-6jYdexgAKr+3kYoTmvC5eDtDHUg7GmFQSdeQqZzAKiPlFAN1heGUoXDbAYYwUCfefZy+WgVJbmAej5TTQpp3jA==
@@ -1857,11 +1852,6 @@ c12@^0.2.7, c12@^0.2.8, c12@^0.2.9:
     mlly "^0.5.7"
     pathe "^0.3.3"
     rc9 "^1.2.2"
-
-cac@^6.7.12:
-  version "6.7.12"
-  resolved "https://registry.yarnpkg.com/cac/-/cac-6.7.12.tgz#6fb5ea2ff50bd01490dbda497f4ae75a99415193"
-  integrity sha512-rM7E2ygtMkJqD9c7WnFU6fruFcN3xe4FM5yUmgxhZzIKJk4uHl9U/fhwdajGFQbQuv43FAUo1Fe8gX/oIKDeSA==
 
 call-bind@^1.0.0, call-bind@^1.0.2:
   version "1.0.2"
@@ -1930,30 +1920,6 @@ chalk@^5.0.0, chalk@^5.0.1:
   version "5.0.1"
   resolved "https://registry.yarnpkg.com/chalk/-/chalk-5.0.1.tgz#ca57d71e82bb534a296df63bbacc4a1c22b2a4b6"
   integrity sha512-Fo07WOYGqMfCWHOzSXOt2CxDbC6skS/jO9ynEcmpANMoPrD+W1r1K6Vx7iNm+AQmETU1Xr2t+n8nzkV9t6xh3w==
-
-changelogen@0.1.1:
-  version "0.1.1"
-  resolved "https://registry.yarnpkg.com/changelogen/-/changelogen-0.1.1.tgz#cfde44c1ea92c89e992715ec5044fde2fd267394"
-  integrity sha512-LBbyAPmqpJ3sm/soYWZ+z8FDACaGB9eY8O2villawSxRDv83kve25Kje54FkiN6YrPiQaW2ehz9owKY+YzHTWw==
-  dependencies:
-    c12 "^0.2.7"
-    consola "^2.15.3"
-    execa "^6.1.0"
-    mri "^1.2.0"
-    scule "^0.2.1"
-
-changelogithub@^0.6.5:
-  version "0.6.6"
-  resolved "https://registry.yarnpkg.com/changelogithub/-/changelogithub-0.6.6.tgz#0eb0fd4f5d132b82ada76b6763f638b92bf3b870"
-  integrity sha512-9STm+siwI3pvigi0UcuI5l1RGkilg8Eh7nE6LiGcOBrMnrxW5wt+To+HNPMnmPLL0L9KVVVMll7xNykd0UwQIg==
-  dependencies:
-    "@antfu/utils" "^0.5.2"
-    c12 "^0.2.7"
-    cac "^6.7.12"
-    changelogen "0.1.1"
-    execa "^6.1.0"
-    kolorist "^1.5.1"
-    ohmyfetch "^0.4.18"
 
 chardet@^0.7.0:
   version "0.7.0"
@@ -4217,11 +4183,6 @@ knitwork@^0.1.2:
   resolved "https://registry.yarnpkg.com/knitwork/-/knitwork-0.1.2.tgz#5447a81d8eaede57d236f864ec29b8dc2bc192bf"
   integrity sha512-2ekmY2S/VB3YGVhrIFadyJQpkjMFSf48tsXCnA+kjs4FEQIT+5FLyOF0No/X58z/2E/VaMyeJfukRoVT4gMsfQ==
 
-kolorist@^1.5.1:
-  version "1.5.1"
-  resolved "https://registry.yarnpkg.com/kolorist/-/kolorist-1.5.1.tgz#c3d66dc4fabde4f6b7faa6efda84c00491f9e52b"
-  integrity sha512-lxpCM3HTvquGxKGzHeknB/sUjuVoUElLlfYnXZT73K8geR9jQbroGlSCFBax9/0mpGoD3kzcMLnOlGQPJJNyqQ==
-
 lazystream@^1.0.0:
   version "1.0.1"
   resolved "https://registry.yarnpkg.com/lazystream/-/lazystream-1.0.1.tgz#494c831062f1f9408251ec44db1cba29242a2638"
@@ -5192,6 +5153,11 @@ pathe@^0.3.4:
   version "0.3.4"
   resolved "https://registry.yarnpkg.com/pathe/-/pathe-0.3.4.tgz#35bfb1e92373f98d9711cc74e7d6475a0654deae"
   integrity sha512-YWgqEdxf36R6vcsyj0A+yT/rDRPe0wui4J9gRR7T4whjU5Lx/jZOr75ckEgTNaLVQABAwsrlzHRpIKcCdXAQ5A==
+
+pathe@^0.3.5:
+  version "0.3.5"
+  resolved "https://registry.yarnpkg.com/pathe/-/pathe-0.3.5.tgz#87e5c1164ded1bebeb9dea5dab63563144062303"
+  integrity sha512-grU/QeYP0ChuE5kjU2/k8VtAeODzbernHlue0gTa27+ayGIu3wqYBIPGfP9r5xSqgCgDd4nWrjKXEfxMillByg==
 
 pathval@^1.1.1:
   version "1.1.1"
@@ -6380,12 +6346,10 @@ tinypool@^0.2.4:
   resolved "https://registry.yarnpkg.com/tinypool/-/tinypool-0.2.4.tgz#4d2598c4689d1a2ce267ddf3360a9c6b3925a20c"
   integrity sha512-Vs3rhkUH6Qq1t5bqtb816oT+HeJTXfwt2cbPH17sWHIYKTotQIFPk3tf2fgqRrVyMDVOc1EnPgzIxfIulXVzwQ==
 
-tinyspy@^1.0.0:
-  version "1.0.1"
-  resolved "https://registry.yarnpkg.com/tinyspy/-/tinyspy-1.0.1.tgz#8e7c2c79cd33c321fa9fa6e63e2ac4223f9ec8c7"
-  integrity sha512-xuhU//HrMEC6mcZPKjQpusK5ZHeh9b1JpeMAkFqR3kasUEk1dGdJXWqRYh2945qq0N7ftiv1QQQLh1RSE7lS1w==
-  dependencies:
-    changelogithub "^0.6.5"
+tinyspy@^1.0.2:
+  version "1.0.2"
+  resolved "https://registry.yarnpkg.com/tinyspy/-/tinyspy-1.0.2.tgz#6da0b3918bfd56170fb3cd3a2b5ef832ee1dff0d"
+  integrity sha512-bSGlgwLBYf7PnUsQ6WOc6SJ3pGOcd+d8AA6EUnLDDM0kWEstC1JIlSZA3UNliDXhd9ABoS7hiRBDCu+XP/sf1Q==
 
 tmp@^0.0.33:
   version "0.0.33"
@@ -6794,10 +6758,10 @@ vite@~3.0.6:
   optionalDependencies:
     fsevents "~2.3.2"
 
-vitepress@v1.0.0-alpha.8:
-  version "1.0.0-alpha.8"
-  resolved "https://registry.yarnpkg.com/vitepress/-/vitepress-1.0.0-alpha.8.tgz#b6a3b503c2ea3ed0a44a16539849c02fa996c090"
-  integrity sha512-kTRN5DCagvMqr9OjylSV9/waGg0IHrxL0hBVuJoz7ykleZq2qR02n5CaiFq5QrSB/VRBGqiVsFQzet9vJsXS8g==
+vitepress@v1.0.0-alpha.9:
+  version "1.0.0-alpha.9"
+  resolved "https://registry.yarnpkg.com/vitepress/-/vitepress-1.0.0-alpha.9.tgz#3426c8c6da2a63a811356f27e42fb9d521038aeb"
+  integrity sha512-+VxgjflIcssbuyUBRYjZRpQ8w25v6XnIbXFmm9qwLVaqZdC0rN6qViEp7oRwA3HUlrGxj7GEzqQjW7xj4+E83w==
   dependencies:
     "@docsearch/css" "^3.2.1"
     "@docsearch/js" "^3.2.1"
@@ -6809,10 +6773,10 @@ vitepress@v1.0.0-alpha.8:
     vite "^3.0.8"
     vue "^3.2.37"
 
-vitest@^0.22.0:
-  version "0.22.0"
-  resolved "https://registry.yarnpkg.com/vitest/-/vitest-0.22.0.tgz#175622a04af77c48967da3b798d53420ad463670"
-  integrity sha512-BSIro/QOHLaQY08FHwT6THWhqLQ+VPU+N4Rdo4pcP+16XB6oLmNNAXGcSh/MOLUhfUy+mqCwx7AyKmU7Ms5R+g==
+vitest@^0.22.1:
+  version "0.22.1"
+  resolved "https://registry.yarnpkg.com/vitest/-/vitest-0.22.1.tgz#3122e6024bf782ee9aca53034017af7adb009c32"
+  integrity sha512-+x28YTnSLth4KbXg7MCzoDAzPJlJex7YgiZbUh6YLp0/4PqVZ7q7/zyfdL0OaPtKTpNiQFPpMC8Y2MSzk8F7dw==
   dependencies:
     "@types/chai" "^4.3.3"
     "@types/chai-subset" "^1.3.3"
@@ -6821,7 +6785,7 @@ vitest@^0.22.0:
     debug "^4.3.4"
     local-pkg "^0.4.2"
     tinypool "^0.2.4"
-    tinyspy "^1.0.0"
+    tinyspy "^1.0.2"
     vite "^2.9.12 || ^3.0.0-0"
 
 vscode-jsonrpc@6.0.0:
