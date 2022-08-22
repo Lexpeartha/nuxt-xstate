@@ -1,11 +1,11 @@
-import { useNuxt, addAutoImport } from '@nuxt/kit'
-import { Import } from 'unimport'
+import { useNuxt } from '@nuxt/kit'
 import { globby } from 'globby'
 import { resolve } from 'pathe'
+import type { Import } from 'unimport'
 
 import type { CustomMachinesOptions } from '../module'
 
-export const setupCustomMachines = async (machinesOptions: CustomMachinesOptions) => {
+export const setupCustomMachines = (machinesOptions: CustomMachinesOptions) => {
   const nuxt = useNuxt()
 
   const nuxtSrcDir = nuxt.options.srcDir
@@ -13,6 +13,19 @@ export const setupCustomMachines = async (machinesOptions: CustomMachinesOptions
 
   const resolvedDir = resolve(nuxtSrcDir, dir)
 
+  nuxt.hook('autoImports:extend', async (nuxtImports: Import[]) => {
+    const imports = await getMachineImports(resolvedDir, importSuffix)
+
+    nuxtImports.push(...imports)
+  })
+}
+
+const scanMachines = async (resolvedDir: string) => {
+  // Sorting to make it consistent between runs
+  return (await globby(resolvedDir)).sort()
+}
+
+const getMachineImports = async (resolvedDir: string, importSuffix: string) => {
   const scannedFiles = await scanMachines(resolvedDir)
 
   // Map with resolved paths as key, and values as import names
@@ -34,10 +47,5 @@ export const setupCustomMachines = async (machinesOptions: CustomMachinesOptions
     })
   })
 
-  addAutoImport(imports)
-}
-
-const scanMachines = async (resolvedDir: string) => {
-  // Sorting to make it consistent between runs
-  return (await globby(resolvedDir)).sort()
+  return imports
 }
