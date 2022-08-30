@@ -68,7 +68,6 @@ export default defineNuxtConfig({
   - `dir`: the directory where your state-machines are located
   - `importSuffix`: the suffix you want appended to your state-machine names
 
-
 ### In your project
 
 Module auto-imports all `@xstate/vue` composables and `createMachine` function from `xstate`. You should be able to use them in your project right away!
@@ -77,22 +76,21 @@ To import your own state-machines, go create directory with the name of `machine
 
 ::: details Expand to see code example
 Let's say you have default options, in which case you would create your machine in `/machines` dir and name it let's say `loading.ts`:
+
 ```ts
 export default createMachine({
   // Your state-machine logic here
-})
+});
 ```
 
 Then in your components/pages it would be auto-imported and ready for usage:
+
 ```html
 <script setup lang="ts">
-  const { state, send } = useMachine(loadingMachine)
+  const { state, send } = useMachine(loadingMachine);
 </script>
 ```
-:::
 
-::: warning Known issue
-Currently module only scans for your state-machines when launching dev server. If you want your new state-machines to be auto-imported, you need to restart the dev server. See [this issue](https://github.com/Lexpeartha/nuxt-xstate/issues/9) for more details and to track the progress of fixing the issue.
 :::
 
 ## Work in progress features
