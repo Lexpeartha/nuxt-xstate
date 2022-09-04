@@ -3,7 +3,7 @@ import { Import } from 'unimport'
 import { globby } from 'globby'
 import { resolve } from 'pathe'
 
-import type { CustomMachinesOptions } from '../module'
+import type { CustomMachinesOptions } from '../types'
 
 export const setupCustomMachines = async (machinesOptions: CustomMachinesOptions) => {
   const nuxt = useNuxt()

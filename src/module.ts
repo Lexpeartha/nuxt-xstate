@@ -5,15 +5,7 @@ import { setupTranspilation } from './parts/transpile'
 import { setupAutoImports } from './parts/autoImports'
 import { setupCustomMachines } from './parts/customMachine'
 
-export interface CustomMachinesOptions {
-  dir?: string,
-  importSuffix?: string,
-}
-
-export interface ModuleOptions {
-  minimal: boolean;
-  customMachines: CustomMachinesOptions | false;
-}
+import type { ModuleOptions } from './types'
 
 export default defineNuxtModule<ModuleOptions>({
   meta: {
@@ -21,7 +13,7 @@ export default defineNuxtModule<ModuleOptions>({
     version,
     configKey: 'xState',
     compatibility: {
-      nuxt: '^3.0.0'
+      nuxt: '^3.0.0-rc.7'
     }
   },
   defaults: {
