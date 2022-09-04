@@ -17,10 +17,21 @@ export default defineConfig({
       { icon: 'github', link: 'https://github.com/Lexpeartha/nuxt-xstate' },
     ],
     nav: [
-      { text: 'Installation', link: '/getting-started#installation' },
-      { text: 'Usage', link: '/getting-started#usage' },
+      { text: 'Quick Start', link: '/getting-started/quick-start' },
+      { text: 'Usage', link: '/getting-started/usage' },
     ],
-    sidebar: [],
+    sidebar: [
+      {
+        text: 'Getting Started',
+        collapsible: true,
+        items: [
+          { text: 'About Module', link: '/getting-started/about' },
+          { text: 'Quick Start', link: '/getting-started/quick-start' },
+          { text: 'Configuration', link: '/getting-started/configuration' },
+          { text: 'Usage', link: '/getting-started/usage' },
+        ]
+      }
+    ],
     footer: {
       message: 'Released under the MIT License.',
       copyright: 'Copyright © 2022-present Aleksa Sević'

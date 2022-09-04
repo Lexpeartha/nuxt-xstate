@@ -11,7 +11,7 @@ hero:
   actions:
     - theme: brand
       text: Get Started
-      link: /getting-started
+      link: /getting-started/about
     - theme: alt
       text: View on GitHub
       link: https://github.com/Lexpeartha/nuxt-xstate

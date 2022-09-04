@@ -4,7 +4,7 @@ import { defineUnimportPreset } from 'unimport'
 export const setupAutoImports = (isMinimal: boolean) => {
   const nuxt = useNuxt()
 
-  nuxt.hook('autoImports:sources', (presets) => {
+  nuxt.hook('imports:sources', (presets) => {
     // If minimal options is enabled import required
     // things from @xstate/vue/lib/fsm or @xstate/fsm
     if (isMinimal) {

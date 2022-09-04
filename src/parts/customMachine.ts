@@ -1,9 +1,9 @@
-import { useNuxt, addAutoImport } from '@nuxt/kit'
+import { useNuxt, addImports } from '@nuxt/kit'
 import { Import } from 'unimport'
 import { globby } from 'globby'
 import { resolve } from 'pathe'
 
-import type { CustomMachinesOptions } from '../module'
+import type { CustomMachinesOptions } from '../types'
 
 export const setupCustomMachines = async (machinesOptions: CustomMachinesOptions) => {
   const nuxt = useNuxt()
@@ -34,7 +34,7 @@ export const setupCustomMachines = async (machinesOptions: CustomMachinesOptions
     })
   })
 
-  addAutoImport(imports)
+  addImports(imports)
 }
 
 const scanMachines = async (resolvedDir: string) => {
