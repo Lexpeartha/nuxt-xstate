@@ -43,26 +43,28 @@
     "test:coverage": "vitest run --coverage"
   },
   "dependencies": {
-    "@nuxt/kit": "^3.0.0-rc.8",
+    "@nuxt/kit": "^3.0.0-rc.9",
     "@xstate/fsm": "^2.0.0",
     "@xstate/vue": "^2.0.0",
     "globby": "^13.1.2",
     "pathe": "^0.3.4",
     "unimport": "^0.6.7",
-    "xstate": "^4.33.2"
+    "xstate": "^4.33.5"
   },
   "devDependencies": {
     "@nuxt/module-builder": "latest",
-    "@nuxt/test-utils-edge": "^3.0.0-rc.8",
-    "@nuxt/webpack-builder": "^3.0.0-rc.8",
+    "@nuxt/test-utils-edge": "^3.0.0-rc.9",
+    "@nuxt/vite-builder": "^3.0.0-rc.9",
+    "@nuxt/webpack-builder": "^3.0.0-rc.9",
     "@nuxtjs/eslint-config-typescript": "10.0.0",
     "eslint": "latest",
-    "nuxt": "^3.0.0-rc.8",
+    "nuxt": "^3.0.0-rc.9",
     "playwright": "^1.25.0",
     "typescript": "^4.7.4",
-    "vitepress": "v1.0.0-alpha.8",
+    "vitepress": "v1.0.0-alpha.13",
     "vitest": "^0.22.0",
     "vue": "^3.2.37",
-    "vue-demi": "^0.13.8"
+    "vue-demi": "^0.13.8",
+    "vue-router": "^4.1.5"
   }
 }
