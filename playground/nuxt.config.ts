@@ -1,5 +1,5 @@
 import { defineNuxtConfig } from 'nuxt'
-import XStateModule from '..'
+import XStateModule from '../src/module'
 
 export default defineNuxtConfig({
   modules: [
