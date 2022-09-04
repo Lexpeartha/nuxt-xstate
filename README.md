@@ -2,9 +2,9 @@
 
 ![GitHub package.json version](https://img.shields.io/github/package-json/v/Lexpeartha/nuxt-xstate?style=flat-square) ![npm (prod) dependency version](https://img.shields.io/npm/dependency-version/nuxt-xstate/@nuxt/kit?style=flat-square) ![npm (prod) dependency version](https://img.shields.io/npm/dependency-version/nuxt-xstate/xstate?style=flat-square) ![npm](https://img.shields.io/npm/dm/nuxt-xstate?label=npm%20downloads&style=flat-square) ![Website](https://img.shields.io/website?down_message=offline&label=documentation&style=flat-square&up_message=online&url=https%3A%2F%2Fnuxt-xstate.lexpeartha.com%2F) ![GitHub Workflow Status](https://img.shields.io/github/workflow/status/Lexpeartha/nuxt-xstate/ci?label=ci&style=flat-square)
 
-Nuxt XState module allows for easy integration of [XState](https://xstate.js.org/) with Nuxt.js. This module is  🚧 WIP 🚧 so stay alert!
+Nuxt XState module allows for easy integration of [XState](https://xstate.js.org/) with Nuxt.js.
 
-- [Read documentation](https://nuxt-xstate.lexpeartha.com/) :book:
+- [Read documentation](https://nuxt-xstate.lexpeartha.com) :book:
 - [Online playground](https://stackblitz.com/edit/nuxt-xstate-playground?file=app.vue) :video_game:
 
 ## Features :sparkles:
@@ -62,12 +62,13 @@ export default defineNuxtConfig({
 
 ### In your project
 
-Check out [documentation](https://nuxt-xstate.lexpeartha.com/getting-started.html#usage) for code example and exact details of usage
+Check out [documentation](https://nuxt-xstate.lexpeartha.com/getting-started/usage) for code example and exact details of usage
 
 ## Work in progress :construction:
 
 - [x] Auto-import your own state machines
-- [ ] [XState inspect](https://xstate.js.org/docs/packages/xstate-inspect) support
+- [ ] [`@xstate/inspect`](https://xstate.js.org/docs/packages/xstate-inspect/) support
+- [ ] Nuxt Bridge support
 
 ## Development :computer:
 
