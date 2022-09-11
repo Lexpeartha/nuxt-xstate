@@ -11,8 +11,12 @@ Nuxt XState module allows for easy integration of [XState](https://xstate.js.org
 
 - [Online playground](https://stackblitz.com/edit/nuxt-xstate-playground?file=app.vue) :video_game:
 
-::: warning
-:warning: This module is still WIP so stay alert!
+::: warning Project Status: Beta
+:warning: APIs may change on minor releases. Lock the version to avoid breakage.
+:::
+
+::: info
+Version `0.3.1` of `nuxt-xstate` has some issues with the nuxt version `3.0.0-rc.9`. Please use version 0.3.0 until the issue is resolved.
 :::
 
 ## Features
