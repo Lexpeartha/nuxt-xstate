@@ -3,16 +3,15 @@ import { useNuxt } from '@nuxt/kit'
 export const setupTranspilation = () => {
   const nuxt = useNuxt()
 
-  // const builder: any = nuxt.options.builder
-
-  // Currently Webpack version breaks, follow this issue for more info:
-  // https://github.com/nuxt/framework/issues/4084
-  const libraries = ['xstate', '@xstate/vue', '@xstate/fsm']
-
-  nuxt.options.vite.optimizeDeps = nuxt.options.vite.optimizeDeps || {}
-  nuxt.options.vite.optimizeDeps.include = nuxt.options.vite.optimizeDeps.include || []
-  nuxt.options.vite.optimizeDeps.include.push(...libraries)
-
   nuxt.options.build.transpile = nuxt.options.build.transpile || []
-  nuxt.options.build.transpile.push(...libraries)
+
+  // For some reason, xstate libraries really dislike being transpiled
+  // by Vite, so they are only transpiled when webpack is used
+  if (nuxt.options.builder === '@nuxt/webpack-builder') {
+    nuxt.options.build.transpile.push(
+      'xstate',
+      '@xstate/vue',
+      '@xstate/fsm'
+    )
+  }
 }
