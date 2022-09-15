@@ -5,7 +5,7 @@ export default defineConfig({
   description: 'XState integration for Nuxt',
   markdown: {
     theme: {
-      light: 'vitesse-light',
+      light: 'github-dark',
       dark: 'vitesse-dark',
     },
     lineNumbers: false
