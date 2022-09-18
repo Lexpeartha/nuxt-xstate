@@ -3,7 +3,7 @@
  */
 import { fileURLToPath } from 'node:url'
 import { describe, test, expect } from 'vitest'
-import { setup, createPage } from '@nuxt/test-utils-edge'
+import { setup, createPage } from '@nuxt/test-utils'
 
 describe('ssr', async () => {
   await setup({
