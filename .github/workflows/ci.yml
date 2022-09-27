@@ -5,8 +5,7 @@ on:
     branches:
       - main
   pull_request:
-    branches:
-      - main
+    types: [opened, reopened]
 
 jobs:
   ci:
@@ -44,6 +43,9 @@ jobs:
 
       - name: Prepare environment 🌳
         run: yarn dev:prepare
+
+      - name: Run lint 🧹
+        run: yarn lint
 
       - name: Run tests 🧪
         run: yarn test:types && yarn test
