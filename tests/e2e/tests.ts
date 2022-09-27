@@ -1,17 +1,7 @@
-/**
- * @vitest-environment node
- */
-import { fileURLToPath } from 'node:url'
-import { describe, test, expect } from 'vitest'
-import { setup, createPage } from '@nuxt/test-utils'
+import { test, expect } from 'vitest'
+import { createPage } from '@nuxt/test-utils'
 
-describe('ssr', async () => {
-  await setup({
-    server: true,
-    browser: true,
-    rootDir: fileURLToPath(new URL('../fixture', import.meta.url))
-  })
-
+export default function () {
   test('shows proper state before clicking', async () => {
     const page = await createPage('/')
 
@@ -27,8 +17,4 @@ describe('ssr', async () => {
     const stateText = await page.innerText('[data-test-id="state-txt"]')
     expect(stateText).toBe('loading')
   })
-
-  // test('auto-imports state machine correctly', () => {
-  //   expect(1 + 1).toBe(2)
-  // })
-})
+}
