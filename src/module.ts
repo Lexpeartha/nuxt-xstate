@@ -31,6 +31,6 @@ export default defineNuxtModule<ModuleOptions>({
     // Setup auto-importing
     setupAutoImports(options.minimal)
 
-    if (options.customMachines) { await setupCustomMachines(options.customMachines) }
+    if (options.customMachines) { setupCustomMachines(options.customMachines) }
   }
 })

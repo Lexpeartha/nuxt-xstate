@@ -1,10 +1,9 @@
-import { useNuxt, addTemplate, addImportsDir } from '@nuxt/kit'
-import { globby } from 'globby'
+import { useNuxt, addImportsDir } from '@nuxt/kit'
 import { resolve } from 'pathe'
 
 import type { CustomMachinesOptions } from '../types'
 
-export const setupCustomMachines = async (machinesOptions: CustomMachinesOptions) => {
+export const setupCustomMachines = (machinesOptions: CustomMachinesOptions) => {
   const nuxt = useNuxt()
 
   const { dir, importSuffix } = machinesOptions

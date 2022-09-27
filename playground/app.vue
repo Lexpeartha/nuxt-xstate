@@ -8,7 +8,5 @@
 </template>
 
 <script setup lang="ts">
-import loadingMachine from './.nuxt/xstate/loadingMachine'
-
 const { state, send } = useMachine(loadingMachine)
 </script>
