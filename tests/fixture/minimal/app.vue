@@ -4,9 +4,13 @@
     <button data-test-id="click-btn" @click="send('CLICK')">
       CLICK
     </button>
+    <p data-test-id="machine">
+      {{ machine }}
+    </p>
   </div>
 </template>
 
 <script setup>
-const { state, send } = useMachine(loadingMachine)
+const machine = useMachine(loadingMachine)
+const { state, send } = machine
 </script>
