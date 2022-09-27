@@ -17,4 +17,14 @@ export default function () {
     const stateText = await page.innerText('[data-test-id="state-txt"]')
     expect(stateText).toBe('loading')
   })
+
+  test('auto-imported state machine works correctly', async () => {
+    const page = await createPage('/')
+
+    const machineString = await page.innerText('[data-test-id="machine"]')
+    const machine = JSON.parse(machineString)
+
+    // TODO: Add more (possibly complex) test cases
+    expect(machine.state).not.toBe(undefined)
+  })
 }

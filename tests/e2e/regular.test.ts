@@ -15,8 +15,4 @@ describe('Regular implementation of the module', async () => {
   })
 
   runTests()
-
-  // test('auto-imports state machine correctly', () => {
-  //   expect(1 + 1).toBe(2)
-  // })
 })
