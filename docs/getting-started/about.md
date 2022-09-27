@@ -15,10 +15,6 @@ Nuxt XState module allows for easy integration of [XState](https://xstate.js.org
 :warning: APIs may change on minor releases. Lock the version to avoid breakage.
 :::
 
-::: info
-If you are encountering issues with version `0.3.1` of `nuxt-xstate`, please upgrade to `0.3.1-alpha.1` until the next release.
-:::
-
 ## Features
 
 - Nuxt 3 support :sparkles:
