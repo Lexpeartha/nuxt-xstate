@@ -60,6 +60,7 @@
     "@nuxt/webpack-builder": "^3.0.0-rc.11",
     "@nuxtjs/eslint-config-typescript": "11.0.0",
     "eslint": "latest",
+    "node-fetch-native": "^0.1.7",
     "nuxt": "^3.0.0-rc.11",
     "playwright": "^1.26.0",
     "typescript": "^4.8.3",
