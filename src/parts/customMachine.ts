@@ -1,43 +1,29 @@
-import { useNuxt, addImports } from '@nuxt/kit'
-import { Import } from 'unimport'
-import { globby } from 'globby'
+import { useNuxt, addImportsDir } from '@nuxt/kit'
 import { resolve } from 'pathe'
 
 import type { CustomMachinesOptions } from '../types'
 
-export const setupCustomMachines = async (machinesOptions: CustomMachinesOptions) => {
+export const setupCustomMachines = (machinesOptions: CustomMachinesOptions) => {
   const nuxt = useNuxt()
 
-  const nuxtSrcDir = nuxt.options.srcDir
   const { dir, importSuffix } = machinesOptions
 
-  const resolvedDir = resolve(nuxtSrcDir, dir)
+  const resolvedDir = resolve(nuxt.options.srcDir, dir)
 
-  const scannedFiles = await scanMachines(resolvedDir)
+  addImportsDir(resolvedDir)
 
-  // Map with resolved paths as key, and values as import names
-  const resolvedNames = new Map<string, string>()
+  nuxt.hook('imports:extend', (imports) => {
+    for (const i of imports) {
+      const file = i.from
+      if (!file.startsWith(resolvedDir)) { continue }
 
-  for (const file of scannedFiles) {
-    const fullFileName = file.split('/').at(-1)
-    const bareName = fullFileName.split('.').at(0).toLowerCase()
+      // Update import name with import suffix
+      const fullFileName = file.split('/').at(-1)
+      const bareName = fullFileName.split('.').at(0).toLowerCase()
 
-    resolvedNames.set(file, bareName + importSuffix)
-  }
+      const newName = bareName + importSuffix
 
-  const imports: Import[] = []
-  resolvedNames.forEach((importName, filePath) => {
-    imports.push({
-      from: filePath,
-      name: 'default',
-      as: importName
-    })
+      i.as = newName
+    }
   })
-
-  addImports(imports)
-}
-
-const scanMachines = async (resolvedDir: string) => {
-  // Sorting to make it consistent between runs
-  return (await globby(resolvedDir)).sort()
 }
