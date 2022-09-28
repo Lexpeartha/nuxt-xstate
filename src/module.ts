@@ -13,7 +13,8 @@ export default defineNuxtModule<ModuleOptions>({
     version,
     configKey: 'xState',
     compatibility: {
-      nuxt: '^3.0.0-rc.7'
+      nuxt: '^2.16.0 || ^3.0.0-rc.7',
+      bridge: true
     }
   },
   defaults: {
@@ -23,14 +24,16 @@ export default defineNuxtModule<ModuleOptions>({
       importSuffix: 'Machine'
     }
   },
-  // eslint-disable-next-line require-await
-  async setup (options, nuxt) {
+  setup (options) {
     // Setup dependencies to be transpiled
     setupTranspilation()
 
     // Setup auto-importing
     setupAutoImports(options.minimal)
 
-    if (options.customMachines) { setupCustomMachines(options.customMachines) }
+    if (options.customMachines) {
+      // Setup custom machines
+      setupCustomMachines(options.customMachines)
+    }
   }
 })
