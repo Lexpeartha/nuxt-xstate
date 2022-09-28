@@ -1,7 +1,23 @@
-import { addImportsSources } from '@nuxt/kit'
+import { addImportsSources, isNuxt2 } from '@nuxt/kit'
 import { defineUnimportPreset } from 'unimport'
 
 export const setupAutoImports = (isMinimal: boolean) => {
+  // Nuxt Bridge
+  if (isNuxt2()) {
+    addImportsSources([
+      defineUnimportPreset({
+        from: isMinimal ? '@xstate/fsm' : 'xstate',
+        imports: [...xStateImports]
+      }),
+      defineUnimportPreset({
+        from: 'xstate-vue2',
+        imports: [...xStateComposables]
+      })
+    ])
+
+    return
+  }
+
   // If minimal options is enabled import required
   // things from @xstate/vue/lib/fsm or @xstate/fsm
   if (isMinimal) {
