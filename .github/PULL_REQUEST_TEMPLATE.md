@@ -14,3 +14,5 @@
 ### 📖 Updated documentation
 
 <!-- Make sure to mention what you changed in the documentation in regards of the new change made in PR -->
+<!-- Updating documentation is not necessary, but is heavily encouraged for bigger/crucial changes -->
+*No response*
