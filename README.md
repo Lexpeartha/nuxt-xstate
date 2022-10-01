@@ -9,7 +9,7 @@ Nuxt XState module allows for easy integration of [XState](https://xstate.js.org
 
 ## Features :sparkles:
 
-- Nuxt 3 support
+- Nuxt Bridge & Nuxt 3 supported
 - Auto-importing of XState composables
 - Auto-importing of your own state-machines
 
@@ -26,7 +26,7 @@ npm install --save-dev nuxt-xstate
 And add it to your `nuxt.config.ts`:
 
 ```js
-import { defineNuxtConfig } from 'nuxt'
+import { defineNuxtConfig } from 'nuxt/config'
 
 export default defineNuxtConfig({
   modules: ['nuxt-xstate']
@@ -66,9 +66,9 @@ Check out [documentation](https://nuxt-xstate.lexpeartha.com/getting-started/usa
 
 ## Work in progress :construction:
 
+- [x] Nuxt Bridge support
 - [x] Auto-import your own state machines
 - [ ] [`@xstate/inspect`](https://xstate.js.org/docs/packages/xstate-inspect/) support
-- [ ] Nuxt Bridge support
 
 ## Development :computer:
 

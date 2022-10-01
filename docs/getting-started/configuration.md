@@ -3,7 +3,7 @@
 You can add `xState` field in your `nuxt.config.ts` to configure the module:
 
 ```ts{6-12}
-import { defineNuxtConfig } from 'nuxt'
+import { defineNuxtConfig } from 'nuxt/config'
 
 export default defineNuxtConfig({
   modules: ['nuxt-xstate'],
@@ -17,6 +17,10 @@ export default defineNuxtConfig({
   },
 })
 ```
+
+::: info Nuxt Bridge usage
+Nuxt Bridge as of now does not work properly with minimal implementation of XState. If you are using Nuxt Bridge, you need to ensure `minimal` is set to `false` (or left untouched, as `false` is the default) in your module options for now.
+:::
 
 - `minimal`: set to `true` to use minified implementations of certain XState features ([see here](https://xstate.js.org/docs/packages/xstate-fsm/#features))
 - `customMachines`: set to `false` to disable auto-importing of your own state-machines. It is an object and it has two properties, `dir` and `importSuffix`
