@@ -17,13 +17,12 @@ Nuxt XState module allows for easy integration of [XState](https://xstate.js.org
 
 ## Features
 
-- Nuxt 3 support :sparkles:
+- Nuxt Bridge & Nuxt 3 support :sparkles:
 - Auto-importing of XState composables :zap:
 - Auto-importing of your own state-machines :mechanical_arm:
 
 ## Work in progress features
 
 - [`@xstate/inspect`](https://xstate.js.org/docs/packages/xstate-inspect/) support
-- Nuxt Bridge support
 
 For more details, check out this discussion: [v1.0 Checklist](https://github.com/Lexpeartha/nuxt-xstate/discussions/10)
