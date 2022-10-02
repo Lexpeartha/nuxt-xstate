@@ -13,7 +13,7 @@ npm install --save-dev nuxt-xstate
 And add it to your modules in `nuxt.config.ts`:
 
 ```ts{4}
-import { defineNuxtConfig } from 'nuxt'
+import { defineNuxtConfig } from 'nuxt/config'
 
 export default defineNuxtConfig({
   modules: ['nuxt-xstate']

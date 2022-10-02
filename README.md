@@ -40,7 +40,7 @@ export default defineNuxtConfig({
 You can add `xState` field in your `nuxt.config.ts` to configure the module:
 
 ```js
-import { defineNuxtConfig } from 'nuxt'
+import { defineNuxtConfig } from 'nuxt/config'
 
 export default defineNuxtConfig({
   modules: ['nuxt-xstate'],
