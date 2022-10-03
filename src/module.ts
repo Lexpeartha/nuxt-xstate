@@ -13,7 +13,7 @@ export default defineNuxtModule<ModuleOptions>({
     version,
     configKey: 'xState',
     compatibility: {
-      nuxt: '^2.16.0 || ^3.0.0-rc.7',
+      nuxt: '^2.16.0 || ^3.0.0-rc.10',
       bridge: true
     }
   },
@@ -22,7 +22,8 @@ export default defineNuxtModule<ModuleOptions>({
     customMachines: {
       dir: 'machines',
       importSuffix: 'Machine'
-    }
+    },
+    autoImports: ['createMachine']
   },
   setup (options) {
     // Setup dependencies to be transpiled
