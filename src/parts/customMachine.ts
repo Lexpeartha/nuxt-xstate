@@ -1,14 +1,14 @@
-import { useNuxt, addImportsDir } from '@nuxt/kit'
-import { resolve } from 'pathe'
+import { useNuxt, addImportsDir, createResolver } from '@nuxt/kit'
 
 import type { CustomMachinesOptions } from '../types'
 
 export const setupCustomMachines = (machinesOptions: CustomMachinesOptions) => {
   const nuxt = useNuxt()
+  const resolver = createResolver(import.meta.url)
 
   const { dir, importSuffix } = machinesOptions
 
-  const resolvedDir = resolve(nuxt.options.srcDir, dir)
+  const resolvedDir = resolver.resolve(nuxt.options.srcDir, dir)
 
   addImportsDir(resolvedDir)
 

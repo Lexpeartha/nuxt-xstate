@@ -1,7 +1,20 @@
 import { addImportsSources, isNuxt2 } from '@nuxt/kit'
 import { defineUnimportPreset } from 'unimport'
+import type { PresetImport } from 'unimport'
 
-export const setupAutoImports = (isMinimal: boolean) => {
+import { ModuleOptions } from '../types'
+
+export const setupAutoImports = (options: ModuleOptions) => {
+  const {
+    minimal: isMinimal,
+    autoImports: xStateImports
+  } = options
+
+  // User defined imports from xstate
+  const toImportFromXState = xStateImports.map<PresetImport>((i: unknown) =>
+    typeof i === 'string' ? i : [i[0], i[1]]
+  )
+
   // Nuxt Bridge
   if (isNuxt2()) {
     // Minimal implementation
@@ -9,7 +22,7 @@ export const setupAutoImports = (isMinimal: boolean) => {
       addImportsSources([
         defineUnimportPreset({
           from: '@xstate/fsm',
-          imports: [...xStateImports]
+          imports: toImportFromXState
         }),
         defineUnimportPreset({
           from: 'xstate-vue2',
@@ -28,7 +41,7 @@ export const setupAutoImports = (isMinimal: boolean) => {
     addImportsSources([
       defineUnimportPreset({
         from: 'xstate',
-        imports: [...xStateImports]
+        imports: toImportFromXState
       }),
       defineUnimportPreset({
         from: 'xstate-vue2',
@@ -46,7 +59,7 @@ export const setupAutoImports = (isMinimal: boolean) => {
     addImportsSources([
       defineUnimportPreset({
         from: '@xstate/fsm',
-        imports: [...xStateImports]
+        imports: toImportFromXState
       }),
       defineUnimportPreset({
         from: '@xstate/vue',
@@ -65,7 +78,7 @@ export const setupAutoImports = (isMinimal: boolean) => {
   addImportsSources([
     defineUnimportPreset({
       from: 'xstate',
-      imports: [...xStateImports]
+      imports: toImportFromXState
     }),
     defineUnimportPreset({
       from: '@xstate/vue',
@@ -78,11 +91,6 @@ export const setupAutoImports = (isMinimal: boolean) => {
 const minimalComposables = ['useMachine']
 
 const filterOutMinimalComposables = (composable: string) => !minimalComposables.includes(composable)
-
-const xStateImports = [
-  'createMachine',
-  'assign'
-]
 
 const xStateComposables = [
   'useMachine',
