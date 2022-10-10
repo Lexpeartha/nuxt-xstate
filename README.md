@@ -66,8 +66,6 @@ Check out [documentation](https://nuxt-xstate.lexpeartha.com/getting-started/usa
 
 ## Work in progress :construction:
 
-- [x] Nuxt Bridge support
-- [x] Auto-import your own state machines
 - [ ] [`@xstate/inspect`](https://xstate.js.org/docs/packages/xstate-inspect/) support
 
 ## Development :computer:
