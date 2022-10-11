@@ -20,6 +20,44 @@ Then in your components/pages it would be auto-imported and ready for usage:
 ```
 :::
 
-::: warning Known issue
-Currently module only scans for your state-machines when launching dev server. If you want your new state-machines to be auto-imported, you need to restart the dev server. See [this issue](https://github.com/Lexpeartha/nuxt-xstate/issues/9) for more details and to track the progress of fixing the issue.
+---
+
+If you want to create really complex state machines, you probably need utilities like `assign` and `send`. They are not auto-imported by default, since their names are quite too common and you likely don't want them imported in every file to obstruct naming other things. For such cases, you can use auto-imported `useXState` composable:
+
+```ts
+const { assign, send } = useXState()
+
+export default createMachine({
+  // Your state-machine logic here
+})
+```
+
+You can treat it as your own toolbox that you reach out to when creating state machines, instead of thinking about importing utilities that work well with your xstate implementation.
+If you see any of the utilities not being returned by `useXState`, please open an issue!
+
+::: warning Be careful
+The `useXState` composable returns utils based on whether you use minimal implementation or not. If you do use it, you will not get full features, for which we recommend you to see official docs [here](https://xstate.js.org/docs/packages/xstate-fsm/#features) and see what's available for you.
+:::
+
+However, if you prefer any or all of these utilities to be auto-imported, you can do so by adding them to `autoImports` option in your module options. For example, if you want to auto-import `assign` and `send`:
+
+```ts
+import { defineNuxtConfig } from 'nuxt/config'
+
+export default defineNuxtConfig({
+  modules: ['nuxt-xstate'],
+  xState: {
+    autoImports: [
+      'createMachine' // import createMachine,
+      ['assign', 'assignMachine'] // import assign as assignMachine,
+      ['send', 'sendMachine'] // import send as sendMachine
+    ],
+  },
+})
+```
+
+As you can see, imports are completely configurable, so you can import them as you like.
+
+::: info
+In similar vein, be careful what you put in here. If you're using minimal implementation, which is not provided by `@xstate/fsm` as utility - things will most certainly break. If something is missing, please open an issue!
 :::

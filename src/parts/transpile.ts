@@ -10,6 +10,7 @@ export const setupTranspilation = () => {
   if (nuxt.options.builder === '@nuxt/webpack-builder') {
     nuxt.options.build.transpile.push(
       'xstate',
+      'xstate/es',
       'xstate-vue2',
       '@xstate/vue',
       '@xstate/fsm'
