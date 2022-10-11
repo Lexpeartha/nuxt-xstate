@@ -35,7 +35,7 @@ export default defineNuxtConfig({
 
 ## Usage :toolbox:
 
-:point-right: Check out the [documentation](https://nuxt-xstate.lexpeartha.com/getting-started/usage)
+:point_right: Check out the [documentation](https://nuxt-xstate.lexpeartha.com/getting-started/usage)
 
 ## Work in progress :construction:
 
