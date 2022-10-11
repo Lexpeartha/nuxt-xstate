@@ -11,7 +11,7 @@ export const setupAutoImports = (options: ModuleOptions) => {
   } = options
 
   // User defined imports from xstate
-  const toImportFromXState = xStateImports.map<PresetImport>((i: unknown) =>
+  const toImportFromXState = xStateImports.map<PresetImport>(i =>
     typeof i === 'string' ? i : [i[0], i[1]]
   )
 
