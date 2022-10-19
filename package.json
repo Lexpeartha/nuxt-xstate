@@ -44,7 +44,7 @@
     "test:coverage": "vitest run --coverage"
   },
   "dependencies": {
-    "@nuxt/kit": "^3.0.0-rc.11",
+    "@nuxt/kit": "^3.0.0-rc.12",
     "@xstate/fsm": "^2.0.0",
     "@xstate/vue": "^2.0.0",
     "globby": "^13.1.2",
@@ -54,19 +54,19 @@
   },
   "devDependencies": {
     "@nuxt/module-builder": "latest",
-    "@nuxt/schema": "^3.0.0-rc.11",
-    "@nuxt/test-utils": "^3.0.0-rc.11",
-    "@nuxt/vite-builder": "^3.0.0-rc.11",
-    "@nuxt/webpack-builder": "^3.0.0-rc.11",
+    "@nuxt/schema": "^3.0.0-rc.12",
+    "@nuxt/test-utils": "^3.0.0-rc.12",
+    "@nuxt/vite-builder": "^3.0.0-rc.12",
+    "@nuxt/webpack-builder": "^3.0.0-rc.12",
     "@nuxtjs/eslint-config-typescript": "11.0.0",
     "eslint": "latest",
-    "node-fetch-native": "^0.1.7",
-    "nuxt": "^3.0.0-rc.11",
-    "playwright": "^1.26.1",
+    "node-fetch-native": "^0.1.8",
+    "nuxt": "^3.0.0-rc.12",
+    "playwright": "^1.27.1",
     "typescript": "^4.8.4",
-    "vitepress": "v1.0.0-alpha.18",
-    "vitest": "^0.23.4",
-    "vue": "^3.2.40",
+    "vitepress": "v1.0.0-alpha.21",
+    "vitest": "^0.24.3",
+    "vue": "^3.2.41",
     "vue-demi": "^0.13.11",
     "vue-router": "^4.1.5"
   }
