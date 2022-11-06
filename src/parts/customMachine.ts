@@ -8,7 +8,7 @@ export const setupCustomMachines = (machinesOptions: CustomMachinesOptions) => {
 
   const { dir, importSuffix } = machinesOptions
 
-  const resolvedDir = resolver.resolve(nuxt.options.srcDir, dir)
+  const resolvedDir = resolver.resolve(nuxt.options.srcDir, dir!)
 
   addImportsDir(resolvedDir)
 
@@ -18,8 +18,8 @@ export const setupCustomMachines = (machinesOptions: CustomMachinesOptions) => {
       if (!file.startsWith(resolvedDir)) { continue }
 
       // Update import name with import suffix
-      const fullFileName = file.split('/').at(-1)
-      const bareName = fullFileName.split('.').at(0).toLowerCase()
+      const fullFileName = file.split('/').at(-1) ?? ''
+      const bareName = (fullFileName.split('.').at(0) ?? '').toLowerCase()
 
       const newName = bareName + importSuffix
 
