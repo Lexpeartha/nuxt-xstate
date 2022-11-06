@@ -1,5 +1,8 @@
-import { assign } from '@xstate/fsm'
+import { assign, createMachine } from '@xstate/fsm'
 
 export const useXState = () => {
-  return { assign }
+  return {
+    assign,
+    createMachine
+  }
 }
