@@ -8,7 +8,8 @@ import {
   matchesState,
   createSchema,
   forwardTo,
-  doneInvoke
+  doneInvoke,
+  createMachine
 } from 'xstate'
 
 export const useXState = () => {
@@ -22,6 +23,7 @@ export const useXState = () => {
     matchesState,
     createSchema,
     forwardTo,
-    doneInvoke
+    doneInvoke,
+    createMachine
   }
 }

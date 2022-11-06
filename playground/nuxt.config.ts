@@ -3,7 +3,7 @@ import XStateModule from '../src/module'
 
 export default defineNuxtConfig({
   modules: [
-    XStateModule
+    XStateModule as any
   ],
   builder: 'webpack',
   xState: {
