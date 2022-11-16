@@ -69,5 +69,10 @@
     "vue": "^3.2.45",
     "vue-demi": "^0.13.11",
     "vue-router": "^4.1.6"
+  },
+  "pnpm": {
+    "peerDependencyRules": {
+      "allowAny": ["@xstate/vue", "xstate-vue2"]
+    }
   }
 }
