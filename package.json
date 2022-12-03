@@ -62,10 +62,10 @@
     "eslint": "latest",
     "node-fetch-native": "^1.0.1",
     "nuxt": "^3.0.0",
-    "playwright": "^1.28.0",
+    "playwright": "^1.28.1",
     "typescript": "^4.9.3",
     "vitepress": "v1.0.0-alpha.29",
-    "vitest": "^0.25.2",
+    "vitest": "^0.25.3",
     "vue": "^3.2.45",
     "vue-demi": "^0.13.11",
     "vue-router": "^4.1.6"
