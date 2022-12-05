@@ -23,8 +23,7 @@ Nuxt XState module allows for easy integration of [XState](https://xstate.js.org
 
 ## Issues to be aware of :bug:
 
-1. [Webpack build not working](https://github.com/Lexpeartha/nuxt-xstate/issues/26)
-2. [Nuxt Bridge with minimal implementation throwing type error](https://github.com/Lexpeartha/nuxt-xstate/issues/24) (*workaround available*)
+1. [Nuxt Bridge with minimal implementation throwing type error](https://github.com/Lexpeartha/nuxt-xstate/issues/24) (*workaround available*)
 
 ## Work in progress features :carpentry_saw:
 
