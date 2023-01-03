@@ -47,9 +47,8 @@
     "@nuxt/kit": "^3.0.0",
     "@xstate/fsm": "^2.0.0",
     "@xstate/vue": "^2.0.0",
-    "globby": "^13.1.2",
-    "unimport": "^1.0.1",
-    "xstate": "^4.35.0",
+    "unimport": "^1.1.0",
+    "xstate": "^4.35.1",
     "xstate-vue2": "^0.3.0"
   },
   "devDependencies": {
@@ -62,10 +61,10 @@
     "eslint": "latest",
     "node-fetch-native": "^1.0.1",
     "nuxt": "^3.0.0",
-    "playwright": "^1.28.1",
-    "typescript": "^4.9.3",
-    "vitepress": "v1.0.0-alpha.30",
-    "vitest": "^0.25.4",
+    "playwright": "^1.29.1",
+    "typescript": "^4.9.4",
+    "vitepress": "v1.0.0-alpha.34",
+    "vitest": "^0.26.3",
     "vue": "^3.2.45",
     "vue-demi": "^0.13.11",
     "vue-router": "^4.1.6"
