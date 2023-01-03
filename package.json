@@ -48,7 +48,7 @@
     "@xstate/fsm": "^2.0.0",
     "@xstate/vue": "^2.0.0",
     "globby": "^13.1.2",
-    "unimport": "^1.0.1",
+    "unimport": "^1.0.2",
     "xstate": "^4.35.0",
     "xstate-vue2": "^0.3.0"
   },
