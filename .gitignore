@@ -49,3 +49,6 @@ coverage
 Network Trash Folder
 Temporary Items
 .apdisk
+
+# Documentation
+docs/**/cache
