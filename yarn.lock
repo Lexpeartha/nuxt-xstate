@@ -8286,10 +8286,10 @@ xstate-vue2@^0.3.1:
   resolved "https://registry.yarnpkg.com/xstate-vue2/-/xstate-vue2-0.3.1.tgz#2ab62df4d656b38cd8356bcd4ab8d3b35f524d06"
   integrity sha512-FpFPiOn4AXQHJTsLsVfZ9s5+s2iqYPo2mYPDhGuS9xMJJ30xwU3M3pq/4iYpLKHlaadkgXMfsEvou4/uOwTcXQ==
 
-xstate@^4.35.4:
-  version "4.35.4"
-  resolved "https://registry.yarnpkg.com/xstate/-/xstate-4.35.4.tgz#87b2a45b6c7e84d820f56378408c6531ca5c4662"
-  integrity sha512-mqRBYHhljP1xIItI4xnSQNHEv6CKslSM1cOGmvhmxeoDPAZgNbhSUYAL5N6DZIxRfpYY+M+bSm3mUFHD63iuvg==
+xstate@^4.36.0:
+  version "4.37.0"
+  resolved "https://registry.yarnpkg.com/xstate/-/xstate-4.37.0.tgz#2f253ccbfc2dc6954ff975b8102714bde9751726"
+  integrity sha512-YC+JCerRclKS9ixQTuw8l3vs3iFqWzNzOGR0ID5XsSlieMXIV9nNPE43h9CGr7VdxA1QYhMwhCZA0EdpOd17Bg==
 
 xxhashjs@~0.2.2:
   version "0.2.2"
