@@ -44,7 +44,7 @@
     "test:coverage": "vitest run --coverage"
   },
   "dependencies": {
-    "@nuxt/kit": "^3.2.0",
+    "@nuxt/kit": "^3.2.2",
     "@xstate/fsm": "^2.0.0",
     "@xstate/vue": "^2.0.0",
     "unimport": "^2.2.4",
