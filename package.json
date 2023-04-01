@@ -41,7 +41,8 @@
     "test": "vitest run",
     "test:watch": "vitest",
     "test:types": "tsc --noEmit",
-    "test:coverage": "vitest run --coverage"
+    "test:coverage": "vitest run --coverage",
+    "bump": "bumpp"
   },
   "dependencies": {
     "@nuxt/kit": "^3.2.0",
@@ -58,6 +59,7 @@
     "@nuxt/vite-builder": "^3.2.0",
     "@nuxt/webpack-builder": "^3.2.0",
     "@nuxtjs/eslint-config-typescript": "12.0.0",
+    "bumpp": "^9.1.0",
     "eslint": "latest",
     "node-fetch-native": "^1.0.1",
     "nuxt": "^3.2.0",
@@ -71,7 +73,10 @@
   },
   "pnpm": {
     "peerDependencyRules": {
-      "allowAny": ["@xstate/vue", "xstate-vue2"]
+      "allowAny": [
+        "@xstate/vue",
+        "xstate-vue2"
+      ]
     }
   }
 }
