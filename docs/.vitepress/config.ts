@@ -2,11 +2,13 @@ import { defineConfig } from "vitepress"
 
 export default defineConfig({
   title: 'Nuxt XState',
+  lang: 'en-US',
   description: 'XState integration for Nuxt',
+  lastUpdated: true,
   markdown: {
     theme: {
-      light: 'github-dark',
-      dark: 'vitesse-dark',
+      light: 'light-plus',
+      dark: 'dark-plus',
     },
     lineNumbers: false
   },
@@ -23,7 +25,6 @@ export default defineConfig({
     sidebar: [
       {
         text: 'Getting Started',
-        collapsible: true,
         items: [
           { text: 'About Module', link: '/getting-started/about' },
           { text: 'Quick Start', link: '/getting-started/quick-start' },
