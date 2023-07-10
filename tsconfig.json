@@ -1,3 +1,8 @@
 {
-  "extends": "./.nuxt/tsconfig.json"
+  "extends": "./.nuxt/tsconfig.json",
+  "include": [
+    "./playground/.nuxt/nuxt.d.ts",
+    "./playground/**/*",
+    "./src/**/*"
+  ]
 }
