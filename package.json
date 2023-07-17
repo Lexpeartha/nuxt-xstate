@@ -49,7 +49,7 @@
     "@xstate/fsm": "^2.1.0",
     "@xstate/vue": "^2.0.0",
     "unimport": "^3.0.8",
-    "xstate": "^4.37.2",
+    "xstate": "^4.38.0",
     "xstate-vue2": "^0.3.2"
   },
   "devDependencies": {
