@@ -45,7 +45,7 @@
     "bump": "bumpp"
   },
   "dependencies": {
-    "@nuxt/kit": "^3.6.0",
+    "@nuxt/kit": "^3.6.1",
     "@xstate/fsm": "^2.1.0",
     "@xstate/vue": "^2.0.0",
     "unimport": "^3.0.8",
