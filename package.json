@@ -48,7 +48,7 @@
     "@nuxt/kit": "^3.6.5",
     "@xstate/fsm": "^2.1.0",
     "@xstate/vue": "^2.0.0",
-    "unimport": "^3.0.14",
+    "unimport": "^3.1.1",
     "xstate": "^4.38.1",
     "xstate-vue2": "^0.3.2"
   },
