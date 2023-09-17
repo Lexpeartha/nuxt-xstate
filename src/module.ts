@@ -1,4 +1,4 @@
-import { defineNuxtModule, createResolver } from '@nuxt/kit'
+import { defineNuxtModule } from '@nuxt/kit'
 
 import { name, version } from '../package.json'
 import { setupTranspilation } from './parts/transpile'
@@ -27,11 +27,6 @@ export default defineNuxtModule<ModuleOptions>({
     autoImports: ['createMachine']
   },
   setup (options, nuxt) {
-    const resolver = createResolver(import.meta.url)
-
-    nuxt.options.build.transpile = nuxt.options.build.transpile || []
-    nuxt.options.build.transpile.push(resolver.resolve('./runtime'))
-
     // Setup dependencies to be transpiled
     setupTranspilation()
 

@@ -41,6 +41,11 @@ jobs:
       - name: Install dependencies 👨🏻‍💻
         run: yarn
 
+      - name: Install Playwright browsers 🎭
+        run: yarn playwright install --with-deps
+
+      # TODO: Upload/download browsers as artifacts to save on CI execution time
+
       - name: Prepare environment 🌳
         run: yarn dev:prepare
 
