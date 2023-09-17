@@ -40,15 +40,11 @@ jobs:
 
       - name: Install dependencies 👨🏻‍💻
         run: yarn
-      - uses: actions/upload-artifact@v3
-        if: always()
-        with:
-          name: playwright-report
-          path: playwright-report/
-          retention-days: 30
 
       - name: Install Playwright browsers 🎭
-        run: yanr playwright install --with-deps
+        run: yarn playwright install --with-deps
+
+      # TODO: Upload/download browsers as artifacts to save on CI execution time
 
       - name: Prepare environment 🌳
         run: yarn dev:prepare
