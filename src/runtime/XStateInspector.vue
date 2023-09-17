@@ -1,3 +1,3 @@
 <template>
-    <iframe data-xstate />
+  <iframe data-xstate />
 </template>

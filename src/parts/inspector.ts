@@ -22,7 +22,7 @@ export const setupInspector = (machinesOptions?: CustomMachinesOptions) => {
   nuxt.hook('ready', () => {
     // TODO: run only on client
     const inspector = inspect()
-    console.log(inspector)
+    // console.log(inspector)
   })
 
   // Logic of the code
