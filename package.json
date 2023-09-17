@@ -68,7 +68,7 @@
     "nuxt": "^3.7.3",
     "playwright": "^1.38.0",
     "typescript": "^5.2.2",
-    "vitepress": "v1.0.0-alpha.64",
+    "vitepress": "v1.0.0-rc.14",
     "vitest": "^0.29.8",
     "vue": "^3.3.4",
     "vue-demi": "^0.13.11",
