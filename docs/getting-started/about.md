@@ -1,8 +1,6 @@
 ---
 title: Getting Started
 description: Getting started with nuxt-xstate module
-layout: docs
-aside: true
 ---
 
 # {{ $frontmatter.title }}
