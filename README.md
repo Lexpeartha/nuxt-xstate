@@ -18,9 +18,7 @@ Nuxt XState module allows for easy integration of [XState](https://xstate.js.org
 Run one of the following commands:
 
 ```bash
-yarn add --dev nuxt-xstate
-# or
-npm install --save-dev nuxt-xstate
+npx nuxi@latest module add xstate
 ```
 
 And add it to your `nuxt.config.ts`:
