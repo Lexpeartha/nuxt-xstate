@@ -11,7 +11,7 @@ jobs:
     strategy:
       matrix:
         os: [ubuntu-latest]
-        node: [16]
+        node: [20]
 
     runs-on: ${{ matrix.os }}
 
@@ -46,6 +46,9 @@ jobs:
 
       - name: Run lint 🧹
         run: yarn lint
+
+      - name: Install Praywright browsers 🎭
+        run: yarn playwright install
 
       - name: Run tests 🧪
         run: yarn test:types && yarn test

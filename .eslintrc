@@ -5,6 +5,10 @@
   "rules": {
     "@typescript-eslint/no-unused-vars": [
       "off"
-    ]
+    ],
+    // tmp
+    "import/no-mutable-exports": "off",
+    "n/no-deprecated-api": "off",
+    "n/no-path-concat": "off",
   }
 }
