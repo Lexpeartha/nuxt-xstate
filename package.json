@@ -49,7 +49,7 @@
     "@xstate/fsm": "^2.1.0",
     "@xstate/vue": "^2.0.0",
     "unimport": "^3.0.14",
-    "xstate": "^4.38.1",
+    "xstate": "^4.38.3",
     "xstate-vue2": "^0.3.2"
   },
   "devDependencies": {
@@ -67,9 +67,9 @@
     "typescript": "5.0.4",
     "vitepress": "v1.0.0-beta.3",
     "vitest": "^0.32.4",
-    "vue": "^3.3.4",
-    "vue-demi": "^0.14.5",
-    "vue-router": "^4.2.4"
+    "vue": "^3.3.13",
+    "vue-demi": "^0.14.7",
+    "vue-router": "^4.2.5"
   },
   "pnpm": {
     "peerDependencyRules": {
