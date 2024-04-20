@@ -5,9 +5,7 @@
 Run one of the following commands:
 
 ```bash
-yarn add --dev nuxt-xstate
-# or
-npm install --save-dev nuxt-xstate
+npx nuxi@latest module add xstate
 ```
 
 And add it to your modules in `nuxt.config.ts`:
