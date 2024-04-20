@@ -37,7 +37,7 @@
     "docs:dev": "vitepress dev docs --port 4000",
     "docs:build": "vitepress build docs",
     "docs:serve": "vitepress serve docs",
-    "lint": "eslint --ext .js,.ts,.vue .",
+    "lint": "ESLINT_USE_FLAT_CONFIG=false eslint --config=.eslintrc --ext .js,.ts,.vue .",
     "test": "vitest run",
     "test:watch": "vitest",
     "test:types": "tsc --noEmit",
