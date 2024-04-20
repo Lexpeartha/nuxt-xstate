@@ -1,2 +1,9 @@
 dist
 node_modules
+
+# TEMP until I figure out what's up with ESLint
+bumpp.config.ts
+#vitest.config.ts
+playground/
+src/
+tests/

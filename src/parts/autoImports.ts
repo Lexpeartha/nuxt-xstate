@@ -2,7 +2,7 @@ import { addImportsSources, isNuxt2 } from '@nuxt/kit'
 import { defineUnimportPreset } from 'unimport'
 import type { PresetImport } from 'unimport'
 
-import { ModuleOptions } from '../types'
+import type { ModuleOptions } from '../types'
 
 export const setupAutoImports = (options: ModuleOptions) => {
   const {
