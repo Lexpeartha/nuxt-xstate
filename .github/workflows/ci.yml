@@ -47,5 +47,8 @@ jobs:
       - name: Run lint 🧹
         run: yarn lint
 
+      - name: Install Praywright browsers 🎭
+        run: yarn playwright install
+
       - name: Run tests 🧪
         run: yarn test:types && yarn test
