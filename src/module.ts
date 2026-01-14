@@ -14,7 +14,7 @@ export default defineNuxtModule<ModuleOptions>({
     version,
     configKey: 'xState',
     compatibility: {
-      nuxt: '^2.16.0 || ^3.0.0',
+      nuxt: '^2.16.0 || >=3.0.0',
       bridge: true
     }
   },
